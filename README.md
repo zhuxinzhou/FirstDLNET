@@ -75,7 +75,7 @@ class CNN(nn.Module):
         return out
 ```
 
-###2.4 定义损失函数和优化器
+### 2.4 定义损失函数和优化器
 criterion = nn.CrossEntropyLoss()
 ```
 交叉熵主要是用来判定实际的输出与期望的输出的接近程度，为什么这么说呢，
@@ -154,7 +154,8 @@ class CNNpro(nn.Module):
         out = self.conv2(out)
         out = self.conv3(out)
         out = out.reshape(out.size(0), -1)
-        out = self.fc(o
+        out = self.fc(out)
+        return out
 ```
 最终结果：
 ![训练结果（调整网络层数后）](https://upload-images.jianshu.io/upload_images/16487280-24e5072c2e14f892.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
