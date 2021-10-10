@@ -158,6 +158,6 @@ class CNNpro(nn.Module):
 ```
 最终结果：
 ![训练结果（调整网络层数后）](https://upload-images.jianshu.io/upload_images/16487280-24e5072c2e14f892.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-_在5轮训练后，训练准确率在75%，测试集准确率在70%，有明显提高_
+_在5轮训练后，训练准确率在90%，测试集准确率在72%，有明显提高_
 ## 总结
 >在本次作业中，我第一次用pytorch实现了一个神经网络模型，并针对cifar10进行了训练,在初次训练，模型准确率在40%左右，后面通过针对学习率、网络层的调整，最终准确度达到了75%
